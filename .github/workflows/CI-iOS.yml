@@ -5,8 +5,6 @@ name: CI-iOS
 on:
   push:
     branches: [ main ]
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review, labeled, review_requested, edited]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -14,6 +12,7 @@ jobs:
   build-and-test:
     # The type of runner that the job will run on
     runs-on: macos-latest
+
     timeout-minutes: 10
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -26,16 +25,6 @@ jobs:
       
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
-    
-    - uses: xavierLowmiller/xcodegen-action@1.1.2
-      with:
-        spec: project.yml
-        quiet: true
-
-    - name: Generate project
-      run: xcodegen generate
-    - name: Clean Simulator Cache
-      run: |
-        xcrun simctl erase all
+      
     - name: Build and Test
-      run: xcodebuild clean build test -scheme "LHKeychainWrapper" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone SE (3rd generation),OS=16.2" ONLY_ACTIVE_ARCH=YES
+      run: xcodebuild clean build test -scheme "LHKeychainWrapper" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.2" ONLY_ACTIVE_ARCH=YES
