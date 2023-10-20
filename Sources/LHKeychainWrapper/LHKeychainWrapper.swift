@@ -1,6 +1,8 @@
 import Foundation
 
 public final class LHKeychainWrapper: LHKeychainWrapperProtocol {
+    public init() {}
+    
     public func setString(_ value: String, forkey key: String) {
         if let data = value.data(using: .utf8) {
             set(data, forKey: key)
