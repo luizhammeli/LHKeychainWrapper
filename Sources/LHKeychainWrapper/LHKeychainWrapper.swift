@@ -107,7 +107,3 @@ public final class LHKeychainWrapper: LHKeychainWrapperProtocol {
         return nil
     }
 }
-//To reduce tight coupling between the application or a specific module and our Secure Local Storage, we can provide a straightforward interface. This way, our clients won't need to concern themselves with implementation details, ensuring better testability. Additionally, should the need arise to switch to a new implementation that doesn't rely on the Keychain in the future, it will be a seamless process for us.
-
-//
-//A possible approach to initiate library development involves leveraging SecKeyStore as our core reference. This is particularly advantageous because it provides the essential additional security layer. Furthermore, it allows for the seamless integration of supplementary features, such as the "deleteAll" method, for comprehensive key removal.
