@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "lhkeychainwrapper",
+      "kind" : "localSourceControl",
+      "location" : "/Users/luizdinizhammerli/GitHub/LHKeychainWrapper",
+      "state" : {
+        "revision" : "29b375dde00d1fd770c07cf4aed1fd8042ea2f95",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
