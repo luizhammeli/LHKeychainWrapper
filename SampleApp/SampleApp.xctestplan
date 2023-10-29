@@ -9,6 +9,15 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:SampleApp.xcodeproj",
+          "identifier" : "25C05D972AEDAB3300B64437",
+          "name" : "SampleApp"
+        }
+      ]
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:SampleApp.xcodeproj",
       "identifier" : "25C05D972AEDAB3300B64437",
@@ -17,7 +26,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:SampleApp.xcodeproj",
         "identifier" : "25C05DA72AEDAB3500B64437",
