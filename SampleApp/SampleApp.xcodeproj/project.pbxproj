@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25618EEE2AEE04EE005B1D6E /* LHKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 25618EED2AEE04EE005B1D6E /* LHKeychainWrapper */; };
 		25C05D9C2AEDAB3300B64437 /* SampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C05D9B2AEDAB3300B64437 /* SampleAppApp.swift */; };
 		25C05D9E2AEDAB3300B64437 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C05D9D2AEDAB3300B64437 /* ContentView.swift */; };
 		25C05DA02AEDAB3500B64437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C05D9F2AEDAB3500B64437 /* Assets.xcassets */; };
 		25C05DA32AEDAB3500B64437 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C05DA22AEDAB3500B64437 /* Preview Assets.xcassets */; };
 		25C05DC62AEDABBD00B64437 /* LHKeychainWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C05DC52AEDABBD00B64437 /* LHKeychainWrapperTests.swift */; };
-		25C05DC92AEDABE700B64437 /* LHKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 25C05DC82AEDABE700B64437 /* LHKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C05DC92AEDABE700B64437 /* LHKeychainWrapper in Frameworks */,
+				25618EEE2AEE04EE005B1D6E /* LHKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			);
 			name = SampleApp;
 			packageProductDependencies = (
-				25C05DC82AEDABE700B64437 /* LHKeychainWrapper */,
+				25618EED2AEE04EE005B1D6E /* LHKeychainWrapper */,
 			);
 			productName = SampleApp;
 			productReference = 25C05D982AEDAB3300B64437 /* SampleApp.app */;
@@ -171,7 +171,7 @@
 			);
 			mainGroup = 25C05D8F2AEDAB3300B64437;
 			packageReferences = (
-				25C05DC72AEDABE700B64437 /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */,
+				25618EEC2AEE04EE005B1D6E /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */,
 			);
 			productRefGroup = 25C05D992AEDAB3300B64437 /* Products */;
 			projectDirPath = "";
@@ -477,9 +477,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		25C05DC72AEDABE700B64437 /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */ = {
+		25618EEC2AEE04EE005B1D6E /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = /Users/luizdinizhammerli/GitHub/LHKeychainWrapper;
+			repositoryURL = "https://github.com/luizhammeli/LHKeychainWrapper.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.1;
@@ -488,9 +488,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		25C05DC82AEDABE700B64437 /* LHKeychainWrapper */ = {
+		25618EED2AEE04EE005B1D6E /* LHKeychainWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 25C05DC72AEDABE700B64437 /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */;
+			package = 25618EEC2AEE04EE005B1D6E /* XCRemoteSwiftPackageReference "LHKeychainWrapper" */;
 			productName = LHKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
