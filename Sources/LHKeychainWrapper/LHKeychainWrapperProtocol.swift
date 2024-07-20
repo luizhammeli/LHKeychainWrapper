@@ -15,4 +15,5 @@ public protocol LHKeychainWrapperProtocol {
     func delete(_ key: String)
     func string(forkey key: String) -> String?
     func appendObject<T: Codable>(_ value: T, forKey key: String)
+    func object<T: Codable>(for key: String) -> T?
 }
